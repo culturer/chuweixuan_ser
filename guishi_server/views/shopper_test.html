@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商户端接口测试</title>
+</head>
+<body>
+	<label>注册</label>
+	<form action="/client " method="POST">
+		<label>[options == register  注册]</label>
+		<div>options:<input type="text" value="register" name="options"></div>
+		<div>tel:<input type="text" name="Tel"></div>
+		<div>pwd:<input type="text" name="Pwd"></div>
+		<input type="submit" name="注册"Submit/>
+	</form>	
+	<br>
+	<label>登录</label>
+	<form action="/client " method="POST">
+		<label>[options == login  登录]</label>
+		<div>options:<input type="text" value="login" name="options"></div>
+		<div>tel:<input type="text" name="Tel"></div>
+		<div>pwd:<input type="text" name="Pwd"></div>
+		<input type="submit" name="注册"Submit/>
+	</form>	
+	<label>轮播</label>
+	<form action="/client " method="POST">
+		<label>[options == getBanner  轮播]</label>
+		<div>options:<input type="text" value="getBanner" name="options"></div>
+		<div>storeId:<input type="text" value="1" name="storeId"></div>
+		<input type="submit" name="轮播"Submit/>
+	</form>	
+	<label>获取商品</label>
+	<form action="/client " method="POST">
+		<label>[options == getGoods  获取商品]</label>
+		<div>options:<input type="text" value="getGoods" name="options"></div>
+		<div>storeId:<input type="text" value="1" name="storeId"></div>
+		<div>index:<input type="text" value="1" name="index"></div>
+		<div>size:<input type="text" value="10" name="size"></div>
+		<input type="submit" name="获取官方商品"Submit/>
+	</form>	
+</body>
+</html>
